@@ -1,0 +1,97 @@
+{"rank":[
+		{"rank":1,"name":"Alliance","country":"swd","g":10,"s":0,"c":2,"money":9494297,"fullname":"Team Alliance"
+		,"p1":"Loda","p2":"s4","p3":"AdmiralBulldog","p4":"EGM","p5":"Akke"},
+		{"rank":2,"name":"NaVi","country":"ukr","g":6,"s":1,"c":2,"money":4264457,"fullname":"Natus Vincere"
+		,"p1":"Xboct","p2":"Dendi","p3":"Funn1k","p4":"Kuroky","p5":"Puppey"},
+		{"rank":3,"name":"Titan","country":"my","g":6,"s":3,"c":3,"money":1926447,"fullname":"Neolution.Orange"
+		,"p1":"Ky.xy","p2":"Ohaiyo","p3":"Xtinct","p4":"Net","p5":"ice"},
+		{"rank":4,"name":"Tongfu","country":"cn","g":2,"s":1,"c":0,"money":1757795,"fullname":"Team Tongfu"
+		,"p1":"Zhou","p2":"Mu","p3":"Xtt","p4":"Zsmj","p5":"Sansheng"},
+		{"rank":5,"name":"IG","country":"cn","g":2,"s":0,"c":0,"money":971873,"fullname":"Invictus Gaming"
+		,"p1":"Hao","p2":"430","p3":"YYF","p4":"Banana","p5":"Faith"},
+		{"rank":6,"name":"DK","country":"cn","g":0,"s":1,"c":0,"money":955453,"fullname":"DK Esports"
+		,"p1":"Burning","p2":"MushI","p3":"iceiceice","p4":"MMY","p5":"Lanm"},
+
+		{"rank":7,"name":"Liquid","country":"us","g":4,"s":3,"c":2,"money":401192,"fullname":"Team Liquid"
+		,"p1":"TC","p2":"Korok","p3":"Bulba","p4":"fluffnstuff","p5":"ixmike88"},
+		{"rank":8,"name":"Fnatic","country":"int","g":1,"s":3,"c":6,"money":393644,"fullname":"Fnatic.Europe"
+		,"p1":"Era","p2":"Trixi","p3":"H4nn1","p4":"Notail","p5":"Fly"},
+		
+		{"rank":9,"name":"LGD.cn","country":"cn","g":2,"s":2,"c":3,"money":372468,"fullname":"LGD Gaming.China"
+		,"p1":"xiaotuji","p2":"Yao","p3":"xiao8","p4":"DDC","p5":"DD"},
+		{"rank":10,"name":"Mouz","country":"gmy","g":3,"s":4,"c":1,"money":191965,"fullname":"Mousesports"
+		,"p1":"","p2":"syndereN","p3":"qojqva","p4":"fata","p5":"paS"},
+		{"rank":11,"name":"EG","country":"us","g":1,"s":3,"c":3,"money":147346,"fullname":"Evil Geniuses"
+		,"p1":"jeyo","p2":"Universe","p3":"MSS","p4":"Fear","p5":"Fogged"},
+		{"rank":12,"name":"VP","country":"ru","g":1,"s":2,"c":6,"money":140990,"fullname":"Virtus Pro"
+		,"p1":"Resolut1on","p2":"God","p3":"LightofHeaveN","p4":"Goblak","p5":"NS"},
+		{"rank":13,"name":"TTD","country":"int","g":5,"s":2,"c":0,"money":119017,"fullname":"Terrible Terrible Damage"
+		,"p1":"Jackal","p2":"","p3":"","p4":"WannaFly","p5":"wejustzik"},
+		{"rank":14,"name":"Dignitas","country":"us","g":1,"s":2,"c":4,"money":115728,"fullname":"Team Dignitas"
+		,"p1":"","p2":"","p3":"","p4":"waytosexy","p5":""},
+		{"rank":15,"name":"Rsnake.int","country":"int","g":3,"s":3,"c":0,"money":77550,"fullname":"Team Kaipi"
+		,"p1":"aui_2000","p2":"SingSing","p3":"bone7","p4":"eternalenvy","p5":"pieliedie"},
+		{"rank":16,"name":"Quantic","country":"frn","g":0,"s":1,"c":0,"money":75699,"fullname":"Quantic Gaming"
+		,"p1":"Silent","p2":"Funzii","p3":"Sockshka","p4":"Goblak","p5":"7ckngMad"},
+		
+		{"rank":17,"name":"Rox.Kis","country":"ru","g":2,"s":2,"c":2,"money":68214,"fullname":"Radical Online X-Tremists"
+		,"p1":"BzzIsPerfect","p2":"Solo","p3":"Dread","p4":"","p5":"yol"},
+		
+
+		{"rank":18,"name":"Empire","country":"ru","g":2,"s":2,"c":1,"money":64631,"fullname":"Team Empire"
+		,"p1":"Silent","p2":"Scandal","p3":"MAg-","p4":"ALWAYSWANNAFLY","p5":"Vanskor"},
+		{"rank":19,"name":"Zenith","country":"sg","g":3,"s":2,"c":0,"money":60060,"fullname":"Team Zenith"
+		,"p1":"","p2":"","p3":"","p4":"","p5":""},
+		
+		{"rank":20,"name":"FXO","country":"kr","g":1,"s":0,"c":0,"money":52718,"fullname":"FXOpen E-Sports"
+		,"p1":"March","p2":"QO","p3":"febby-dieu","p4":"Sagun","p5":"Anarchy"},
+		
+		{"rank":21,"name":"LGD.int","country":"int","g":0,"s":2,"c":0,"money":51492,"fullname":"LGD Gaming.International"
+		,"p1":"Black","p2":"Pajjkat","p3":"Misery","p4":"Brax","p5":"xFreedom"},
+		{"rank":22,"name":"MUFC","country":"my","g":3,"s":3,"c":1,"money":47814,"fullname":"Invision MUFC"
+		,"p1":"","p2":"","p3":"","p4":"","p5":""},	
+
+		{"rank":23,"name":"Trust","country":"tha","g":2,"s":3,"c":1,"money":32074,"fullname":"Mith Trust"
+		,"p1":"Lakelz","p2":"aaabbbaaa","p3":"sD","p4":"TnK","p5":"r5r5"},
+		{"rank":24,"name":"EoT","country":"kr","g":0,"s":1,"c":0,"money":26359,"fullname":"Eye of The Tiger"
+		,"p1":"Mafia","p2":"WANGJYU","p3":"BanHwa","p4":"Guardia","p5":"Reisen"},
+		
+		{"rank":25,"name":"VG","country":"cn","g":2,"s":3,"c":1,"money":24505,"fullname":"Vici Gaming"
+		,"p1":"TuTu","p2":"Super!","p3":"RoTK","p4":"Fy","p5":"Fenrir"},
+		
+		{"rank":26,"name":"PR","country":"blr","g":0,"s":1,"c":0,"money":18390,"fullname":"Power Rangers"
+		,"p1":"","p2":"","p3":"","p4":"","p5":""},
+		
+		{"rank":27,"name":"FD","country":"sg","g":0,"s":3,"c":1,"money":16551,"fullname":"First Departure"
+		,"p1":"Scripted","p2":"hanafication","p3":"poloson","p4":"Meracle-","p5":"Lubby"},
+		{"rank":28,"name":"Rsnake","country":"cn","g":0,"s":1,"c":1,"money":12260,"fullname":"Rattle Snake"
+		,"p1":"Icy","p2":"Johnny","p3":"Luo","p4":"Sag","p5":"ABMD"},
+		
+		{"rank":29,"name":"KT","country":"kr","g":0,"s":0,"c":1,"money":10421,"fullname":"Kellogg Tigerpower"
+		,"p1":"TeacherLee","p2":"yPie","p3":"JesusStick","p4":"Frusciante","p5":"Park"},
+		{"rank":30,"name":"BirdGang","country":"kr","g":0,"s":0,"c":1,"money":10421,"fullname":"BirdGang"
+		,"p1":"Hellsymphony","p2":"mp","p3":"tb","p4":"BigBird","p5":"Furious"},
+		{"rank":31,"name":"Rstars","country":"cn","g":0,"s":0,"c":1,"money":10000,"fullname":"Rising Stars Gaming"
+		,"p1":"Sylar","p2":"cty","p3":"KingJ","p4":"xdd","p5":"357"},
+		
+
+		{"rank":32,"name":"Neo.sg","country":"sg","g":1,"s":1,"c":1,"money":7356,"fullname":"Netolic.Singapore"
+		,"p1":"chibix33","p2":"raveplue","p3":"KSKSKSKS","p4":"lodraky","p5":"KeN"},
+		{"rank":33,"name":"Mineski","country":"phi","g":1,"s":0,"c":1,"money":7356,"fullname":"Mineski AMD Razer"
+		,"p1":"bimbo","p2":"jhoven","p3":"yaniyani","p4":"owa","p5":"gio"},
+		{"rank":34,"name":"iSg","country":"sg","g":1,"s":0,"c":0,"money":3065,"fullname":"Insidious Gaming"
+		,"p1":"ninjaboogie","p2":"chibix33","p3":"raveplue","p4":"Fazelsmurf","p5":"kiosaii"},
+		{"rank":35,"name":"1st.vn","country":"vn","g":0,"s":1,"c":0,"money":1839,"fullname":"First.Vietnam"
+		,"p1":"bc_boss1989","p2":"vuvantin.ares","p3":"hcma.misa","p4":"Secret","p5":"taipolime"},
+		{"rank":36,"name":"TMY","country":"tha","g":0,"s":1,"c":0,"money":1839,"fullname":"Tell Me Why.gosucup"
+		,"p1":"intreso","p2":"BungSellRotee","p3":"KyT-","p4":"nocsm","p5":"upper_"}
+
+	],
+"match":[
+		{"title":"GEST九月赛","country":"cn","team":"LGD.cn"},
+		{"title":"EizoCup#8","country":"ru","team":"Empire"},
+		{"title":"sina超新星","country":"cn","team":"IG"}
+		
+	],
+"date":"2013-9-25"
+}

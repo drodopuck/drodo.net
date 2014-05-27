@@ -1,0 +1,20 @@
+{
+	"0":"Piercing Beams",
+	"1":"Luminous Gaze",
+	"2":"Searing Essence",
+	"3":"Resonant Energy",
+	"4":"Burning Animus",
+	"5":"Felicity's Blessing",
+	"6":"Ethereal Flames",
+	"7":"Affliction of Vermin",
+	"8":"Sunfire",
+	"9":"Diretide Corruption",
+	"10":"Frostivus Frost",
+	"11":"Trail of the Lotus Blossom",
+	"12":"Crystal Rift",
+	"13":"Cursed Essence",
+	"14":"Divine Essence",
+	"15":"Trail of the Amanita",
+	"16":"Lava"	
+}
+

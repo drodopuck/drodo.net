@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>巨鸟聊聊!</title>
+	<link href="liaoliao_backstage.png" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../css/drodo.css" media="all">
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+	<script type="text/javascript" src="backstage.js"></script>
+	
+	<script type="text/javascript">
+	
+	$(document).ready(function() {
+		// 从参数里取登录信息，如果有，就保存cookie，转到index.html
+		var username = get_param("userName");
+		var token = get_param("token");
+		if (username && token){
+			var liaoliao_backstage_cookie = {
+				"username":username,
+				"token":token
+			};
+			setCookie('liaoliao_backstage', encodeURIComponent(JSON.stringify(liaoliao_backstage_cookie)));
+			window.location.href = 'index.html';
+		}
+		
+		// 从cookie里取登录信息，如果有，就跳过，转到index.html
+		var ck = getCookie('liaoliao_backstage');
+		if (ck){
+			window.location.href = 'index.html';
+		}
+		
+		// 如果还没有，就显示登陆框
+		$("#div_login").fadeIn("slow");
+		
+		// PPTV登录
+		$('#btn_pptv_login').on('click', function() {
+			
+			var n = $("#input_username").val();
+			var p = $("#input_password").val();
+			var url = 'http://passport.pptv.com/v3/login/login.do?username='+n+'&password='+p+'&format=jsonp&cb=pptv_login_cb';
+			
+			console.info(url);
+			http_ajax(url);		
+		});
+
+		// QQ登录
+		$('#btn_qq_login').on('click', function() {
+			var qq_url = "http://passport.pptv.com/v3/login/thirdparty.do?apptype=qq&returnUrl=" + decodeURIComponent(window.location.href);
+			window.location.href = qq_url;
+		});		
+
+		// 微博登录
+		$('#btn_weibo_login').on('click', function() {
+			var weibo_url = "http://passport.pptv.com/v3/login/thirdparty.do?apptype=sina&returnUrl=" + decodeURIComponent(window.location.href);
+			window.location.href = weibo_url;				
+		});	
+		
+	});
+	
+	
+	
+	function pptv_login_cb(r){
+		if (r.errorCode){
+			alert('登录失败！');
+			$(".login_btn").show();
+			$("#login_connecting").slideUp('slow');
+		}
+		else{
+			var username = r.result.username;
+			var token = r.result.token;
+			var liaoliao_backstage_cookie = {
+					"username":username,
+					"token":token
+				};
+			setCookie('liaoliao_backstage', encodeURIComponent(JSON.stringify(liaoliao_backstage_cookie)));
+			window.location.href = 'index.html';
+		}
+	}
+	
+	
+	</script>
+	
+	
+</head>
+<body style="text-shadow:0px 0px 0px #000000;  font-family:微软雅黑;background-color:#000000;">
+
+		 
+	<div id="div_login" style="display:none;z-index:10000;position:fixed;width:430px;height:280px;padding:10px;left:50%;top:50%;margin-left:-225px;margin-top:-150px;background-image:url(dialog2.png);">
+		<table style="margin:20px;margin-top:10px;width:390px;">
+			<tr>
+				<td colspan="2" style="height:60px;"><font class="white xl" style="font-size:28px;">用户登录</font></td>
+			</tr>
+			<tr>
+				<td><font class="m gray" style="font-size:20px;">PPTV用户名</font></td>
+				<td><input id="input_username" style="width:100%;color:white;border:0px;background:transparent;background-image:url(dialog2.png);font-size:16px;padding:5px;" value=""></td>
+			</tr>
+			<tr>
+				<td><font class="m gray" style="font-size:20px;">PPTV密码</font></td>
+				<td><input id="input_password" type="password" style="width:100%;color:white;border:0px;background:transparent;background-image:url(dialog2.png);font-size:16px;padding:5px;" value=""></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<div id="btn_pptv_login" class="login_btn clickable"  style="width:80px;height:35px;float:left;background-color:#ff4444; opacity:1;padding:15px;margin-left:23px;margin-top:15px;">
+						<font class="white" style="font-size:24px;">PPTV</font>
+					</div>
+					<div id="btn_qq_login" class="login_btn clickable"  style="width:80px;height:35px;float:left;background-color:#4444ff; opacity:1;padding:15px;margin-left:13px;margin-top:15px;">
+						<font class="white" style="font-size:24px;">QQ</font>
+					</div>
+					<div id="btn_weibo_login" class="login_btn clickable"  style="width:80px;height:35px;float:left;background-color:#ff8822; opacity:1;padding:15px;margin-left:13px;margin-top:15px;">
+						<font class="white" style="font-size:24px;">微博</font>
+					</div>
+					
+				</td>
+			</tr>
+		</table>
+		
+	</div>
+
+</body>
+</html>

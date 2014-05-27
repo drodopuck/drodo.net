@@ -1,0 +1,99 @@
+﻿body {
+	margin-right:  auto;
+	margin-left:  auto;
+	background: black;
+	background-image: url('drodo_bg6.png');
+	background-repeat:no-repeat;
+  	background-attachment:fixed;
+	filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+   -moz-background-size:100% 100%;
+   background-size:100% 100%;
+	
+	font-family:微软雅黑;
+	text-align:left; 
+	margin: 0px;
+	padding: 0px;
+	-webkit-text-size-adjust:none;
+	min-height:500px;
+	text-align: center;
+	
+	scrollbar-face-color: #fcfcfc;scrollbar-highlight-color: #6c6c90;scrollbar-shadow-color: #fcfcfc;scrollbar-3dlight-color: #fcfcfc;scrollbar-arrow-color: #240024;scrollbar-track-color: #fcfcfc;scrollbar-darkshadow-color: #48486c;scrollbar-base-color: #fcfcfc
+}
+
+font { font-family:微软雅黑; font-size: 12px; /*text-shadow: 1px 1px 1px black;*/}
+font.gray { color:#666666; }
+font.hover:hover { color:#ff6600; }
+font.orange { color:ff6600; }
+font.lightgray { color:#bbbbbb; }
+font.darkgray { color:#666666; }
+font.black { color:#000000; }
+font.white { color:#ffffff; }
+font.yellow { color:yellow; }
+
+font.small { font-size:12px; }/*12号以下的字有的浏览器不支持，所以先统一为12*/
+font.normal { font-size:12px; }
+font.large { font-size:13px; } 
+font.xlarge { font-size:15px; } 
+font.xxlarge { font-size:16px; }
+font.xxxlarge { font-size:20px; }
+font.xxxxlarge { font-size:28px; }
+
+div.drodo_title { width:1180px;height:100px;margin-top:10px;margin-left:auto;margin-right:auto; }
+div.drodo_logo { width:220px;height:100px;float:left; }
+img.drodo_logo { width:220px;height:100px;}
+div.drodo_title_text { width:940px;height:30px;float:left;padding-top:65px;padding-left:20px;text-align:left; }
+div.drodo_login_steam { width:160px;height:25px;height:30px;float:right;padding-top:75px;margin-right:20px; }
+
+div.drodo_title_tab { width:110px;height:30px;border-bottom:3px solid #666666;text-align:center;float:left; }
+div.drodo_title_tab_selected { width:110px;height:30px;border-bottom:3px solid #ff6600;text-align:center;float:left; }
+div.drodo_left { padding: 15px; width: 200px; height: auto; float: left; margin-bottom: 20px;min-height:500px;}
+div.drodo_right { padding: 10px; width: 920px; float: left; margin-left: 10px;margin-bottom: 20px; min-height:600px;}
+div.drodo_left_banner { width: 170px; float: left; padding:5px; padding-left:15px;padding-right:15px;margin-bottom:10px; }
+select.drodo_left_select {font-family: 微软雅黑; font-size: 16px; color: gray; width: 170px; background: #000000; }
+
+.black60 {background-image: url('black60.png');}
+.yj {border-radius: 20px;}
+.yj_big {border-radius: 22px;}
+.yj_top {border-top-left-radius: 20px;border-top-right-radius: 20px;}
+.yj_bottom {border-bottom-left-radius: 20px;border-bottom-right-radius: 20px;}
+.yj_left {border-top-left-radius: 20px;border-bottom-left-radius: 20px;}
+.yj_right {border-top-right-radius: 20px;border-bottom-right-radius: 20px;}
+
+div.player_mask { width:100%; height:100%; background: black; position:fixed;
+			top: 0%;left:0%; opacity:0.8; z-index:10000; overflow: auto;}
+
+.clickable { cursor:pointer; }
+
+div.player_outside_large { width:1140px; height:600px; position:absolute;
+			padding-top:30px;padding-left:50px;padding-bottom:30px;padding-right:50px; 
+			top:50%;left:50%;margin-left:-620px;margin-top:-330px; opacity:1; z-index:10020; overflow:hidden;}
+div.player_left_large { width: 910px; height:600px;  float:left; border:0px solid gray; background:black;}
+div.player_right_large { width: 200px; height:600px;  float:left; margin-top:10px;
+			margin-left:30px; border:0px solid gray;  overflow:auto;  }
+div.icon_x { width:22px;height:22px;background-image:url('x.png'); }
+
+
+/* For the "inset" look only */
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 15px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.25); 
+    -webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(0,0,0,0); 
+}

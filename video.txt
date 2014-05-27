@@ -1,0 +1,19 @@
+{
+"1":{
+		"id":"1", "name":"超乎你想象的巅峰博弈", "event":"TI3决赛", "type":"match",
+		"team1":"Alliance","team1_c":"swd", "team2":"NaVi","team2_c":"ukr", "num":"5",
+		"upper":"西瓦幽鬼", "src":"youku", "time":"2013-08-13",
+		"pic":"http://s3.vp.pptvimg.com/images/638f05a891c01cef794f684c2e01090634209b62.jpeg",
+		"description":"暂无描述",
+		"swf":"http://player.youku.com/player.php/sid/XNTk1NzEwNTI0/v.swf"
+	},
+"2":{
+		"id":"2", "name":"最后一手选屠夫刚刚好", "event":"TI3", "type":"match",
+		"team1":"LGD.cn","team1_c":"cn", "team2":"NaVi","team2_c":"ukr", "num":"2",
+		"upper":"啸天", "src":"youku", "time":"2013-08-04",
+		"pic":"http://s5.vp.pptvimg.com/images/b803c1238bf929f1497903af8636668ea4b0a25c.jpeg",
+		"description":"暂无描述",
+		"swf":"http://player.youku.com/player.php/sid/XNTkyMjA5OTc2/v.swf"
+	}
+
+}

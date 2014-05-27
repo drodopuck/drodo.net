@@ -1,0 +1,27 @@
+{
+	"Loda":{"id":"76561198061761348", "name":"Loda", "rarity":"immortal", "ti":[{"time":"2013","event":"世界冠军 Alliance"}]},
+	"s4":{"id":"76561198001497299", "name":"s4", "rarity":"immortal", "ti":[{"time":"2013","event":"世界冠军 Alliance"}]},
+	"Akke":{"id":"76561198001554683", "name":"Akke", "rarity":"immortal", "ti":[{"time":"2013","event":"世界冠军 Alliance"}]},
+	"EGM":{"id":"76561197964182156", "name":"EGM", "rarity":"immortal", "ti":[{"time":"2013","event":"世界冠军 Alliance"}]},
+	"AdmiralBulldog":{"id":"76561198036748162", "name":"AdmiralBulldog", "rarity":"immortal", "ti":[{"time":"2013","event":"世界冠军 Alliance"}]},
+	"Puppey":{"id":"76561198047544485", "name":"Puppey", "rarity":"immortal", "ti":[{"time":"2011","event":"世界冠军 NaVi"}]},
+	"LighTofHeaven":{"id":"76561198049592046", "name":"LighTofHeaven", "rarity":"immortal", "ti":[{"time":"2011","event":"世界冠军 NaVi"}]},
+	"Xboct":{"id":"76561198049891200", "name":"Xboct", "rarity":"immortal", "ti":[{"time":"2011","event":"世界冠军 NaVi"}]},
+	"Dendi":{"id":"76561198030654385", "name":"Dendi", "rarity":"immortal", "ti":[{"time":"2011","event":"世界冠军 NaVi"}]},
+	"YYF":{"id":"76561198050310737", "name":"YYF", "rarity":"immortal", "ti":[{"time":"2012","event":"世界冠军 iG"}]},
+	"Zhou":{"id":"76561198050403391", "name":"Zhou", "rarity":"immortal", "ti":[{"time":"2012","event":"世界冠军 iG"}]},
+	"430":{"id":"76561198048850805", "name":"430", "rarity":"immortal", "ti":[{"time":"2012","event":"世界冠军 iG"}]},
+	"Faith":{"id":"76561198042593402", "name":"Faith", "rarity":"immortal", "ti":[{"time":"2012","event":"世界冠军 iG"}]},
+	"Chuan":{"id":"76561198048818941", "name":"Chuan", "rarity":"immortal", "ti":[{"time":"2012","event":"世界冠军 iG"}]},
+	
+	"2009":{"id":"76561197972849529", "name":"2009", "rarity":"ancient", "ti":[{"time":"2009","event":"LGD"}]},
+	"2009":{"id":"76561198048779870", "name":"2009", "rarity":"ancient", "ti":[{"time":"2009","event":"LGD"}]},
+	"longDD":{"id":"76561198051157922", "name":"longDD", "rarity":"ancient", "ti":[{"time":"2011","event":"DK"}]},
+	
+	
+	
+	
+	
+	
+	"萌萌de风行":{"id":"76561198034651705", "name":"萌萌de风行", "rarity":"arcana", "ti":[{"time":"drodo.net","event":"网站创始人"}]}
+}

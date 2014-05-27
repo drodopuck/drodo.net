@@ -1,0 +1,77 @@
+	        		        	{
+
+"LongDD":{
+		"name":"LongDD", "site":"YY直播", "size":"1", "type":"dota2",
+		"description":"黄翔技校校长！龙弟弟原名黄翔，职业游戏玩家，中国最早走职业Dota的选手，Dota生涯非常辉煌。退役后在歪歪频道经常直播职业选手开黑。",
+		"code":"<embed align='middle' allowfullscreen='true' allowscriptaccess='never' height='600' mode='transparent' quality='high' src='http://yy.com/s/90016/1816825055/mini.swf' type='application/x-shockwave-flash' width='910'>"
+	},
+"Pis":{
+		"name":"Pis", "site":"YY直播", "size":"1", "type":"dota2",
+		"description":"Pis，卜严骏，曾用id: Yaphets。前DotA明星选手，担任SOLO位，世界第一影魔。",
+		"code":"<embed align='middle' allowfullscreen='true' allowscriptaccess='never' height='600' mode='transparent' quality='high' src='http://yy.com/s/90016/1692071053/mini.swf' type='application/x-shockwave-flash' width='910'>"
+	},
+"游戏风云1套":{
+		"name":"游戏风云1套", "site":"风云直播", "size":"1", "type":"game",
+		"description":"游戏风云频道成立于2004年，是全国最早的游戏类内容付费电视频道。解说阵容强大，有BBC, 单车, 海涛, 820, Miss, 淑仪, 赵洁等等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/.htm' id='channel-info'>风云直播 游戏风云一套 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv:'39079_1354004699650'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"游戏风云2套":{
+		"name":"游戏风云2套", "site":"风云直播", "size":"1", "type":"game",
+		"description":"游戏风云频道成立于2004年，是全国最早的游戏类内容付费电视频道。解说阵容强大，有BBC, 单车, 海涛, 820, Miss, 淑仪, 赵洁等等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/.htm' id='channel-info'>风云直播 游戏风云二套 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '39079_1368704811427'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"游戏风云3套":{
+		"name":"游戏风云3套", "site":"风云直播", "size":"1", "type":"game",
+		"description":"游戏风云频道成立于2004年，是全国最早的游戏类内容付费电视频道。解说阵容强大，有BBC, 单车, 海涛, 820, Miss, 淑仪, 赵洁等等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/gamefy_3.htm' id='channel-info'>风云直播 游戏风云三频道 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '39079_1355190502396'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"Kent落日拉风":{
+		"name":"Kent落日拉风", "site":"风云直播", "size":"1", "type":"dota2",
+		"description":"落日拉风，日本宫崎地区中国留学生会会长；Kent，天津在读大学生。两人经常一起在游戏中解说，在DOTA2玩家中小有名气。",
+		"code":"<div id='feng-yun-player-wrap' class='shadow'><a href='http://www.fengyunzhibo.com/tv/lgdcn.htm' id='channel-info'>风云直播 LGDcn频道 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '247032_1364462889103'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"傲世啸天":{
+		"name":"傲世啸天", "site":"风云直播", "size":"1", "type":"dota2",
+		"description":"傲世★啸天，国内非常有人气的新人解说，对比赛和战队的理解非常到位，主持《啸谈DOTA》等节目。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/461040_1364106679832.htm' id='channel-info'>风云直播 Dota2啸天 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '461040_1364106679832'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"湖南卫视":{
+		"name":"湖南卫视", "site":"风云直播", "size":"1", "type":"variety",
+		"description":"湖南卫视台标的原意为“鱼米之乡”，外形像一粒大米，中间的空位如同一条鱼，象征湖南是鱼米之乡。而椭圆的形状和橙色的颜色，极像一个芒果，所以观众们给它取了个绰号“芒果台”~",
+		"code":"<div id='feng-yun-player-wrap'><object id='null' width='910' height='600' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0'><param name='allowfullscreen' value='true'><param name='allowFullScreenInteractive' value='true'><param name='allowscriptaccess' value='always'><param value='#000000' name='bgcolor'><param name='quality' value='high'><param name='cachebusting' value='true'><param name='src' value='http://resource.fengyunzhibo.com:1863/players/players.php'><param name='wmode' value='window'><param name='flashvars' value='config=%7B%22type%22%3A%22live%22%2C%22partner%22%3A%22useelive%22%2C%22channel%22%3A%220000000001_1342934731354%22%7D'><embed id='null' width='910' height='600' type='application/x-shockwave-flash' src='http://resource.fengyunzhibo.com:1863/players/players.php' allowfullscreeninteractive='true' allowfullscreen='true' allowscriptaccess='always' quality='high' cachebusting='true' wmode='window' bgcolor='#000000' flashvars='config=%7B%22type%22%3A%22live%22%2C%22partner%22%3A%22useelive%22%2C%22channel%22%3A%220000000001_1342934731354%22%7D'></object></div>"
+	},
+"Neotv1套":{
+		"name":"Neotv1套", "site":"风云直播", "size":"1", "type":"game",
+		"description":"NeoTV 拥有多年运营和直播国际级大型电竞赛事的经验，专业的节目制作团队，致力打造高质量国际化的电竞游戏综合平台。解说阵容: 老党，谷子，小队长等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/265_1368522882056.htm' id='channel-info'>风云直播 Neotv 综合频道 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '265_1368522882056'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"Neotv2套":{
+		"name":"Neotv2套", "site":"风云直播", "size":"1", "type":"game",
+		"description":"NeoTV 拥有多年运营和直播国际级大型电竞赛事的经验，专业的节目制作团队，致力打造高质量国际化的电竞游戏综合平台。解说阵容: 老党，谷子，小队长等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/265_1345111218776.htm' id='channel-info'>风云直播 Neotv 综合频道 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '265_1345111218776'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"GTV":{
+		"name":"GTV", "site":"风云直播", "size":"1", "type":"game",
+		"description":"GTV游戏竞技频道是一个游戏产业的泛大众媒体，针对所有游戏爱好者，包括网络游戏，电视游戏，PC单机游戏，电子竞技等内容，涉及全面。解说阵容: DC，沐沐等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/gtvyouxi.htm' id='channel-info'>风云直播 GTV游戏官方频道 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: 'gtv'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"TobiWan":{
+		"name":"TobiWan", "site":"Twitch.tv", "size":"1", "type":"dota2",
+		"description":"提起“秃笔王”，大家一定都非常熟悉，他是目前全球最受欢迎的DOTA2解说，以其激情幽默的风格著称。",
+		"code":"<object type='application/x-shockwave-flash' height='600' width='910' id='live_embed_player_flash' data='http://www.twitch.tv/widgets/live_embed_player.swf?channel=joindotared' bgcolor='#000000'><param name='allowFullScreen' value='true' /><param name='allowScriptAccess' value='always' /><param name='allowNetworking' value='all' /><param name='movie' value='http://www.twitch.tv/widgets/live_embed_player.swf' /><param name='flashvars' value='hostname=www.twitch.tv&channel=joindotared&auto_play=true&start_volume=25' /></object>"
+	},
+"Dendi":{
+		"name":"Dendi", "site":"Twitch.tv", "size":"1", "type":"dota2",
+		"description":"Dendi is living legend of Dota 2 scene and famous for his Pudge, Shadow Fiend and Invoker skills. He has enough talent for performing ultrakills and rampages almost with every hero while his sense of humor and cheerfulness makes him one of the most loved personalities in the community.",
+		"code":"<object type='application/x-shockwave-flash' name='live_site_player_flash' data='http://www-cdn.jtvnw.net/swflibs/TwitchPlayer.swf' width=910 height=600 id='live_site_player_flash' style='visibility: visible;'><param name='allowScriptAccess' value='always'><param name='allowFullScreen' value='true'><param name='allowNetworking' value='all'><param name='wmode' value='opaque'><param name='flashvars' value='hide_chat=true&auto_play=true&publisherTimezoneOffset=-180&publisherGuard=null&hostname=www.twitch.tv&team=navi&loadCallback=Twitch.player._twitchPlayerLoaded&channel=dendi'></object>"
+	},
+"17173":{
+		"name":"17173", "site":"风云直播", "size":"1", "type":"game",
+		"description":"作为连接企业、玩家和渠道的重要纽带，17173不仅在内容上提供最新最好的游戏资讯，而且一直致力于营造有利于产业健康发展的舆论氛围，成为影响社会道德的中坚力量。曾成功举办G1等赛事，解说阵容: 皮卡秀，2009，老鼠等。",
+		"code":"<div id='feng-yun-player-wrap'><a href='http://www.fengyunzhibo.com/tv/8923_1343721387500.htm' id='channel-info'>风云直播 17173直播第一频道 弹幕,无插件,NBA,英超</a></div><script type='text/javascript'>window.fengyunconf={width:910,height:600,tv: '8923_1343721387500'};</script><script type='text/javascript' src='http://static.ws.kukuplay.com/support/fengyunplayerloader.js'></script>"
+	},
+"浙江卫视":{"name":"浙江卫视", "site":"风云直播", "size":"1", "type":"variety",
+		"description":"正宗好凉茶正宗好声音欢迎收看由凉茶领导品牌加多宝为您冠名的加多宝凉茶中国好声音喝启力添动力娃哈哈启力精神保健品为中国好声音加油。本届中国好声音当中四位导师最得意的门生将踏上娃哈哈启力音乐梦想之旅。发短信参与互动立即获得苏宁易购的100元优惠券感谢苏宁易购对本节目的大力支持。",
+		"code":"<div id='feng-yun-player-wrap'><object width='910' height='600' id='null' classid='clsid:d27cdb6e-ae6d-11cf-96b8-444553540000' codebase='http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0'><PARAM NAME='_cx' VALUE='14817'><PARAM NAME='_cy' VALUE='11906'><PARAM NAME='FlashVars' VALUE='config=%7B%22type%22%3A%22live%22%2C%22partner%22%3A%22useelive%22%2C%22channel%22%3A%220000000001_1342935092275%22%7D'><PARAM NAME='Movie' VALUE='http://resource.fengyunzhibo.com:1863/players/players.php'><PARAM NAME='Src' VALUE='http://resource.fengyunzhibo.com:1863/players/players.php'><PARAM NAME='WMode' VALUE='Window'><PARAM NAME='Play' VALUE='0'><PARAM NAME='Loop' VALUE='-1'><PARAM NAME='Quality' VALUE='High'><PARAM NAME='SAlign' VALUE='LT'><PARAM NAME='Menu' VALUE='-1'><PARAM NAME='Base' VALUE=''><PARAM NAME='AllowScriptAccess' VALUE='always'><PARAM NAME='Scale' VALUE='NoScale'><PARAM NAME='DeviceFont' VALUE='0'><PARAM NAME='EmbedMovie' VALUE='0'><PARAM NAME='BGColor' VALUE='000000'><PARAM NAME='SWRemote' VALUE=''><PARAM NAME='MovieData' VALUE=''><PARAM NAME='SeamlessTabbing' VALUE='1'><PARAM NAME='Profile' VALUE='0'><PARAM NAME='ProfileAddress' VALUE=''><PARAM NAME='ProfilePort' VALUE='0'><PARAM NAME='AllowNetworking' VALUE='all'><PARAM NAME='AllowFullScreen' VALUE='true'><PARAM NAME='AllowFullScreenInteractive' VALUE='true'><PARAM NAME='IsDependent' VALUE='0'><param name='allowfullscreen' value='true'><param name='allowFullScreenInteractive' value='true'><param name='allowscriptaccess' value='always'><param name='bgcolor' value='#000000'><param name='quality' value='high'><param name='cachebusting' value='true'><param name='src' value='http://resource.fengyunzhibo.com:1863/players/players.php'><param name='wmode' value='window'><param name='flashvars' value='config=%7B%22type%22%3A%22live%22%2C%22partner%22%3A%22useelive%22%2C%22channel%22%3A%220000000001_1342935092275%22%7D'><embed width='910' height='600' id='null' src='http://resource.fengyunzhibo.com:1863/players/players.php' type='application/x-shockwave-flash' flashvars='config=%7B%22type%22%3A%22live%22%2C%22partner%22%3A%22useelive%22%2C%22channel%22%3A%220000000001_1342935092275%22%7D' bgcolor='#000000' wmode='window' cachebusting='true' quality='high' allowscriptaccess='always' allowfullscreen='true' allowfullscreeninteractive='true'></object></div>"
+	}
+}	        	        

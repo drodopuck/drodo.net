@@ -1,0 +1,401 @@
+<html>
+<head>
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=UTF-8">
+	<link rel="shortcut icon" href="drodo.ico">
+	<title>巨鸟聊聊!</title>
+	<link href="liaoliao_backstage.png" type="image/x-icon" rel="shortcut icon" />
+	<link rel="stylesheet" type="text/css" href="../css/drodo.css" media="all">
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script src="http://ajax.microsoft.com/ajax/jquery.templates/beta1/jquery.tmpl.js"></script>
+	<script type="text/javascript" src="backstage.js"></script>
+	
+	<script id="dialog" type="text/x-jquery-tmpl">
+		<div id="div_chat_${id}" style="min-height:50px;margin-bottom:10px;float:left;${display}">
+			<div style="width:50px;height:50px;float:left;">
+				<img style="width:50px;height:50px;" src="${usericon}">
+			</div>
+			<div style="width:20px;height:50px;float:left;background-image: url(dialog3.png);">
+			</div>
+			<div style="min-height:50px;max-width:${maxwidth}px;float:left;background-image: url(dialog4.png);">
+				{{each pics}}   
+					<img src="${$value}" style="max-width:${maxwidth-20}px;max-height:200px;margin:10px;" onload="scroll2bottom();"></img>  
+				{{/each}} 
+				<div style="margin:10px;margin-left:20px;margin-right:20px;">
+					<font style="color:black;font-size:20px;">${text}</font>
+				</div>
+			</div>
+			<div style="height:1px;width:${maxwidth}px;">
+			</div>
+		</div>        
+    </script>
+	
+</head>
+
+<body style="text-shadow:0px 0px 0px #000000; text-align:left; overflow:hidden; word-break:break-all;word-wrap:break-word;">
+	<div id="div_left" style="color:white; width:100px; height:100%; float:left;">
+		<div id="div_logo" style="background-color:black; width:50px;height:50px;margin:10px;margin-bottom:0px;margin-right:20px;margin-top:30px;float:right;">
+			<img src="liaoliao_logo.png" style="width:50px;height:50px;" title="巨鸟聊聊! 内测版">
+		</div>
+		<div id="div_mypoi" class="clickable" style="background-color:black; width:50px;height:40px;padding-top:10px;margin:10px;margin-bottom:0px;margin-right:20px;float:right;text-align:center;" onclick="jump_tab(1);">
+			<font class="white" style="font-size:20px;margin-top:10px;">关注</font>
+		</div>
+		<div id="div_hotpoi" class="clickable" style="background-color:black; width:50px;height:40px;padding-top:10px;margin:10px;margin-bottom:0px;margin-right:20px;float:right;text-align:center;" onclick="jump_tab(2);">
+			<font class="white" style="font-size:20px;margin-top:10px;">热门</font>
+		</div>
+		<div id="div_searchpoi" class="clickable" style="background-color:black; width:50px;height:40px;padding-top:10px;margin:10px;margin-bottom:0px;margin-right:20px;float:right;text-align:center;" onclick="jump_tab(3);">
+			<font class="white" style="font-size:20px;margin-top:10px;">搜索</font>
+		</div>
+	</div>
+	<div id="div_middle" style="color:white; width:400px; height:100%; float:left; ">
+		<div id="div_user_info" style="height:100px;margin:10px;margin-top:20px;background-image: url(dialog2.png);">
+			<div style="float:left;margin:10px;"><img id="img_my_pic" src="" style="height:80px;width:80px;"></div>
+			<div style="float:left;margin:10px;width:200px;margin-bottom:0px;"><font id="my_name" style="color:white;font-size:24px;"></font></div>
+			<div style="float:left;margin:10px;width:250px;margin-top:0px;margin-bottom:0px;white-space:nowrap;overflow-x:hidden;"><font id="my_username" style="color:gray;font-size:18px;"></font></div>
+			
+			<div style="float:right;margin:10px;margin-top:0px;"><font id="my_exit" class="clickable" style="color:gray;font-size:18px;" onclick="logout();">退出</font></div>
+		</div>
+		<div id="div_poi_list" style="height:400px;margin:10px;overflow-y:auto;background-image: url(dialog2.png);">
+		</div>
+	</div>
+	<div id="div_right" style="width:auto; height:100%; float:left;">
+		<div id="div_liaoliao" style="height:100%; margin:20px; overflow:auto;"></div>
+	</div>
+	<div id="div_input" style=" height:100px;padding:0px;width:60%;position:fixed;right:20px;bottom:20px;z-index:10000;">
+		<textarea id="input_msg" style="height:100px;margin:0px;padding:10px;background:transparent;background-image:url(dialog2.png);color:white;font-size:20px;border:0px;resize:none;" placeholder="想要说点什么吗"></textarea>
+			
+	</div>
+	<div id="black_mask" style="width:100%; height:100%; position:fixed; z-index:50000; background-color:black;">
+		<div style="width:128px;height:150px;text-align:center;position:fixed;left:50%;top:50%;margin-left:-64px;margin-top:-75px;">
+			<img id="loading" src="loading.gif" style="width:128px;height:128px;"><br>
+			<font id="ft_loading" style="font-size:18px;color:white;"></font>
+		</div>
+	</div>
+<script>
+
+var admin_username = '';
+var admin_password = '';
+var admin_token = '';
+var poiid = get_param('poiid') || '2014051215189';
+var tab = get_param('t') || '1';
+var my_pic='', my_nickname='', my_username='';
+
+
+$(document).ready(function() {
+	setSize();
+
+	setTabStatus();
+	
+	// 从cookie里取登录信息，如果没有就转到login
+	var ck = getCookie("liaoliao_backstage");
+	if (ck){
+		ck = JSON.parse(decodeURIComponent(ck));
+		console.info(ck);
+		if (ck.username && ck.token){
+			login_username = ck.username;
+			login_token = ck.token;
+			
+			admin_username = login_username;
+			admin_token = login_token;
+
+			$("#ft_loading").html("正在获取连接点");
+
+		 	var jumper_url = 'http://jumper.liao.pptv.com/vw/v1/connectserver/connect.json?username=' + admin_username + '&token=' + admin_token + '&plt=backstage&cb=jumper_cb';
+		    //console.info(jumper_url);
+		    http_ajax(jumper_url);
+			
+			var usr_url = "http://passport.pptv.com/v3/query/nonauthuserprofile.do?username=" + admin_username + "&format=jsonp&cb=get_userinfo_cb";
+			//console.info(usr_url);
+			http_ajax(usr_url);
+
+			if (tab =="1"){
+				var poi_url = "http://connector.liao.pptv.com/vw/v1/poi/getfollowpois?username=" + admin_username + "&format=jsonp&cb=get_poilist_cb";
+				//console.info(poi_url);
+				http_ajax(poi_url);
+			}
+			else if (tab == "2"){
+				var poi_url = "http://connector.liao.pptv.com/vw/v1/poi/gethotpois?count=20&format=jsonp&cb=get_poilist_cb";
+				//console.info(poi_url);
+				http_ajax(poi_url);
+			}
+		}
+		else{
+			alert('cookie异常! 请重新登录');
+			window.location.href = 'login.html';
+		}
+	}
+	else{
+		window.location.href = 'login.html';
+	}
+	
+});
+
+function get_userinfo_cb(r){
+	if (r.errorCode){
+		alert('获取用户信息失败！');
+	}
+	else{
+		$("#img_my_pic").attr('src',decodeURIComponent(r.result.facePic));
+		$("#my_name").html(decodeURIComponent(r.result.nickname).substr(0,8));
+		$("#my_username").html(decodeURIComponent(r.result.username));
+		my_pic = decodeURIComponent(r.result.facePic);
+		my_nickname = decodeURIComponent(r.result.username);
+		my_username = decodeURIComponent(r.result.username);
+	}	
+}
+
+function jump_page(poiid){
+	window.location.href='index.html?poiid='+poiid+'&t='+tab;
+}
+
+function jump_tab(tab){
+	window.location.href='index.html?t='+tab+'&poiid='+poiid;
+}
+
+function get_poilist_cb(r){
+	if (r.err){
+		alert('获取关注话题列表失败！');
+	}
+	else{
+		var html = '<div style="height:1px;"></div>';
+		if (r.data.pois.length>0){
+			for (var i in r.data.pois){
+				var p = r.data.pois[i];
+				if (p.poiid == poiid){
+					html += '<div style="margin:10px;margin-top:10px;float:none;height:50px;background-color:#4444ff;" >';
+				}
+				else{
+					html += '<div class="clickable" style="margin:10px;margin-top:10px;float:none;height:50px;background-color:black;" onclick="jump_page('+p.poiid+');">';
+				}
+				html += '<div style="float:left;"><img src="'+p.poipic+'" style="width:50px;height:50px;margin-right:10px;" onerror="this.src=\'defult.png\'"></div>';
+				html += '<div style="float:left;"><font style="font-size:20px;">'+p.poiname.substr(0,10)+'</font></div>';
+				html += '</div>';
+			}
+		}
+		$("#div_poi_list").html(html);
+	}	
+}
+
+function pptv_login_cb(r){
+	if (r.errorCode){
+		alert('登录失败！');
+		logout();
+	}
+	else{
+		$("#ft_loading").html("正在获取连接点");
+		admin_token = r.result.token;
+		admin_username = r.result.username;
+
+	 	var jumper_url = 'http://jumper.liao.pptv.com/vw/v1/connectserver/connect.json?username=' + admin_username + '&token=' + admin_token + '&plt=backstage&cb=jumper_cb';
+	    console.info(jumper_url);
+	    http_ajax(jumper_url);
+	}
+}
+
+function jumper_cb(o) {
+	console.info(o);
+	if (o.err == 0) {
+	    var ws = o.data.availablecpts[0];
+	    $("#ft_loading").html("正在连接服务器");
+	    ws_connect(ws);
+	} else {
+	    alert("从jumper获取连接点失败!");
+	}
+}
+
+// 打开ws连接
+function ws_connect(ws) {
+	socket = new WebSocket(ws);
+	
+	socket.onopen = function(event) {
+		$("#ft_loading").html("连接成功");
+		$("#black_mask").fadeOut("slow");
+		var sd1 = {
+			    'header': {
+			        'type': '/chat/getpoimessages'
+			    },
+			    'body': {
+			        'poiid': poiid,
+			        'count': 20
+			    }
+			};
+		var chat = {};
+		chat [poiid] = 0;
+		
+		var sd2 = {
+			    'header': {
+			        'type': '/conn/start'
+			    },
+			    'body': {
+			        'config': {
+			            'notification': 0,
+			            'chat': chat
+			        }
+			    }
+			};
+
+		socket.send(JSON.stringify(sd1));
+		socket.send(JSON.stringify(sd2));
+		
+		// 监听消息
+	    socket.onmessage = function(event) {
+	        var d = JSON.parse(event.data);
+
+	        show_msg(d);
+	    }
+		// 监听Socket的关闭
+	    socket.onerror = function(event) {
+		    console.error(event);
+	        alert('websocket连接错误！');
+	    };
+		// 监听Socket的关闭
+	    socket.onclose = function(event) {
+	    	console.error(event);
+	        alert('websocket连接已断开！');
+	    };
+	};
+}
+
+// 显示消息
+function show_msg(d){
+	var type = d.header.type;
+    var data = d.body.data;
+
+	if (type == "/system/notification") {
+		var d = data;
+        var show_data = {
+				'id' : d.messageid,
+				'display' : '',
+				'usericon' : 'defult.png',
+				'text' : '(系统通知)'+JSON.stringify(d),
+				'pics' : [],
+				'maxwidth' : $(window).width()-640
+			}; 
+      	$('#dialog').tmpl(show_data).appendTo('#div_liaoliao');
+    	scroll2bottom();
+    }
+    else if (type == "/chat/pushmessage") {
+    	var d = data;
+    	var show_data = {
+				'id' : d.messageid,
+				'display' : '',
+				'usericon' : d.usericon||'',
+				'text' : d.text||'',
+				'pics' : d.picture ? d.picture.split(',') : [],
+				'maxwidth' : $(window).width()-640
+			}; 
+      	$('#dialog').tmpl(show_data).appendTo('#div_liaoliao');
+    	scroll2bottom();
+    }
+    else if (type == "/chat/poimessages") {
+    	if (data.count > 0) {
+            var msgs = data.messages;
+            for (var i = 0; i < msgs.length; i++) {
+                var d = msgs[i];
+                console.info(d);
+				var show_data = {
+						'id' : d.messageid,
+						'display' : '',
+						'usericon' : d.usericon||'',
+						'text' : d.text||'',
+						'pics' : d.picture ? d.picture.split(',') : [],
+						'maxwidth' : $(window).width()-640
+					}; 
+              	$('#dialog').tmpl(show_data).appendTo('#div_liaoliao');
+              	scroll2bottom();
+            }
+            scroll2bottom();
+    	}
+    }
+    else if (type == "/chat/sendmessageresponse" ) {
+    	if (d.body.err){
+    		alert(d.body.data.msg);
+    	}
+    	else{
+        	var ts = d.header.uuid;
+        	$('#div_chat_'+ts).show();
+        	scroll2bottom();
+    	}
+
+    }
+	
+}
+
+
+//发消息
+document.onkeydown = function(evt){
+	var evt = window.event?window.event:evt;
+	if(evt.keyCode==13){
+		send_message();
+		return false;
+	}
+};
+
+function send_message() {
+	var msg = $("#input_msg").val();
+	if (msg.length>100){
+		alert("这么长，发你妹啊");
+		return;
+	}
+	
+	var ts = (new Date()).getTime();
+	sd = {
+		    'header': {
+		        'type': '/chat/sendmessage',
+		        'uuid': ts
+		    },
+		    'body': {
+		        'poiid': poiid,
+		        'data': {
+		            'text': msg
+		        }
+		    }
+		};
+
+	socket.send(JSON.stringify(sd));
+	$("#input_msg").val('');
+
+	var show_data = {
+			'id' : ts,
+			'display' : 'display:none;',
+			'usericon' : my_pic,
+			'text' : msg||'',
+			'maxwidth' : $(window).width()-640
+		}; 
+  	$('#dialog').tmpl(show_data).appendTo('#div_liaoliao');
+	scroll2bottom();
+}
+
+function scroll2bottom(){
+	//滚动到底部
+	var scrollTop = $("#div_liaoliao")[0].scrollHeight;
+	$("#div_liaoliao").scrollTop(scrollTop);
+}
+
+function logout(){
+	delCookie('liaoliao_backstage');
+	window.location.href = 'login.html';
+}
+
+function setSize(){
+	$("#div_right").css("width",$(window).width()-500+"px");
+	$("#div_input").css("width",$(window).width()-540+"px");
+	$("#div_poi_list").css("height",$(window).height()-150+"px");
+	$("#div_liaoliao").css("height",$(window).height()-150+"px");
+	$("#input_msg").css("width",$(window).width()-540+"px");
+}
+
+function setTabStatus(){
+	if (tab=="1"){
+		$("#div_mypoi").css('background-color','#4444ff');	
+	}if (tab=="2"){
+		$("#div_hotpoi").css('background-color','#4444ff');	
+	}if (tab=="3"){
+		$("#div_searchpoi").css('background-color','#4444ff');	
+	}
+
+}
+
+</script>
+
+</body>
+</html>

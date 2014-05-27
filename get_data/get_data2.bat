@@ -1,0 +1,1 @@
+﻿perl json.pl <s.txt> data.txt
